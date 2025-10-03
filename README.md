@@ -1,0 +1,221 @@
+# Bootcamp: Diseño y Programación Orientada a Objetos con Java ☕
+
+[![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://www.oracle.com/java/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![SENA](https://img.shields.io/badge/SENA-Formación-green.svg)](https://www.sena.edu.co/)
+
+> Bootcamp intensivo de 9 semanas enfocado en análisis, diseño y programación orientada a objetos utilizando Java y UML.
+
+---
+
+## 📋 Descripción
+
+Este bootcamp está diseñado para desarrollar competencias sólidas en **Análisis Orientado a Objetos (AOO)**, **Diseño con UML** y **Programación en Java**, con un enfoque práctico y basado en proyectos reales.
+
+### 🎯 Objetivos
+
+- Dominar los principios fundamentales de la Programación Orientada a Objetos (POO)
+- Aplicar técnicas de análisis y diseño de software con UML
+- Desarrollar aplicaciones Java utilizando mejores prácticas
+- Construir proyectos integradores que demuestren competencias laborales
+
+---
+
+## 🗓️ Estructura del Bootcamp
+
+| Semana | Tema Principal | Duración |
+|--------|---------------|----------|
+| **1** | [Introducción a Java y POO](bootcamp/semana-01) | 4 horas |
+| **2** | [Fundamentos de Clases y Objetos](bootcamp/semana-02) | 4 horas |
+| **3** | [Encapsulación y Constructores](bootcamp/semana-03) | 4 horas |
+| **4** | [Herencia](bootcamp/semana-04) | 4 horas |
+| **5** | [Polimorfismo](bootcamp/semana-05) | 4 horas |
+| **6** | [Abstracción e Interfaces](bootcamp/semana-06) | 4 horas |
+| **7** | [Manejo de Paquetes y Excepciones](bootcamp/semana-07) | 4 horas |
+| **8** | [Colecciones y Programación Genérica](bootcamp/semana-08) | 4 horas |
+| **9** | [Proyecto Final Aplicado](bootcamp/semana-09) | 4 horas |
+
+**Total**: 36 horas de formación intensiva
+
+---
+
+## 📚 Contenido por Semana
+
+Cada semana incluye:
+
+```
+bootcamp/semana-XX/
+├── RUBRICA_EVALUACION.md      # Criterios de evaluación
+├── 1-teoria/                  # Material teórico
+├── 2-practica/                # Ejercicios y talleres
+├── 3-recursos/                # Glosario y recursos adicionales
+└── 4. asignación_dominios/    # Asignaciones por ficha (opcional)
+```
+
+### 🔑 Componentes Clave
+
+- **📖 Teoría**: Conceptos fundamentales con ejemplos del mundo real
+- **💻 Práctica**: Ejercicios progresivos y proyectos hands-on
+- **📝 Evaluación**: Evidencias de conocimiento, desempeño y producto
+- **🎓 Recursos**: Glosarios, referencias y material complementario
+
+---
+
+## 🛠️ Tecnologías y Herramientas
+
+### Software Requerido
+
+- **JDK 17+** - Java Development Kit
+- **IDE**: IntelliJ IDEA, Eclipse o VS Code con Java Extension Pack
+- **Git** - Control de versiones
+- **GitHub** - Repositorio y colaboración
+
+### Recursos Online
+
+- [Documentación Oficial de Java (Oracle)](https://docs.oracle.com/en/java/)
+- [W3Schools Java Tutorial](https://www.w3schools.com/java/)
+- [GeeksforGeeks Java](https://www.geeksforgeeks.org/java/)
+- [Replit](https://replit.com/) - IDE online para práctica rápida
+
+---
+
+## 🚀 Inicio Rápido
+
+### 1. Clonar el Repositorio
+
+```bash
+git clone https://github.com/elparchetipk/bc-oop-java.git
+cd bc-oop-java
+```
+
+### 2. Verificar Instalación de Java
+
+```bash
+java -version
+javac -version
+```
+
+### 3. Navegar a la Semana Actual
+
+```bash
+cd bootcamp/semana-01
+```
+
+### 4. Seguir las Instrucciones
+
+Cada semana contiene material teórico, ejercicios prácticos y una rúbrica de evaluación. Sigue el orden secuencial para mejor aprovechamiento.
+
+---
+
+## 📊 Metodología de Aprendizaje
+
+### Estrategias Didácticas
+
+- 🎯 **Aprendizaje Basado en Proyectos (ABP)**
+- 🧩 **Aprendizaje Basado en Problemas**
+- 🔄 **Clase Invertida (Flipped Classroom)**
+- 👥 **Pair Programming**
+- 🎮 **Gamificación con retos semanales**
+- 📚 **Estudio de casos reales**
+- 🎭 **Role playing técnico**
+
+### Evaluación
+
+Cada semana incluye tres tipos de evidencias:
+
+1. **Conocimiento** 🧠: Cuestionarios y evaluaciones teóricas
+2. **Desempeño** 💪: Ejercicios prácticos en clase
+3. **Producto** 📦: Entregables evaluables (código, diagramas, documentación)
+
+---
+
+## 📖 Saberes Clave
+
+### Conceptos y Principios
+
+- Análisis Orientado a Objetos (AOO)
+- UML: Diagramas de casos de uso, actividades, clases
+- Modelo de dominio y modelo entidad-relación
+- Principios SOLID
+- Patrones de diseño básicos
+
+### Habilidades de Proceso
+
+- ✅ Interpretar requisitos de software
+- ✅ Diagramar casos de uso y actividades
+- ✅ Construir modelos de dominio
+- ✅ Elaborar modelos entidad-relación
+- ✅ Documentar análisis y diseño
+- ✅ Implementar soluciones en Java
+
+---
+
+## 🎓 Criterios de Evaluación
+
+Los estudiantes serán evaluados según su capacidad para:
+
+1. Interpretar informes de requisitos y modelar funciones del software
+2. Elaborar diagramas UML según estándares actuales
+3. Generar plantillas extendidas de casos de uso
+4. Realizar diagramas de actividades detallados
+5. Elaborar modelos entidad-relación completos
+6. Representar el negocio mediante clases abstractas
+7. Documentar actividades de análisis de forma profesional
+
+---
+
+## 🤝 Contribuir
+
+Este es un proyecto educativo del SENA. Si eres instructor o estudiante y deseas contribuir:
+
+1. Haz fork del repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
+3. Commitea tus cambios (`git commit -m 'feat: add new exercise'`)
+4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
+
+---
+
+## 📞 Soporte
+
+Si tienes preguntas o necesitas ayuda:
+
+- 📧 Email: [instructor@example.com](mailto:instructor@example.com)
+- 💬 Discussions: [GitHub Discussions](https://github.com/elparchetipk/bc-oop-java/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/elparchetipk/bc-oop-java/issues)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+## 🏆 Agradecimientos
+
+- **SENA** - Servicio Nacional de Aprendizaje
+- **Oracle** - Por Java y su excelente documentación
+- **Comunidad Java** - Por los recursos y ejemplos
+
+---
+
+## 📚 Documentación Adicional
+
+- [📖 Tema Completo](_docs/tema.md)
+- [🤖 Instrucciones de Copilot](.github/copilot-instructions.md)
+- [🔧 Setup de Auto-commit](.github/scripts/SETUP_AUTOCOMMIT.md)
+
+---
+
+<div align="center">
+
+**🚀 ¡Comienza tu viaje en la Programación Orientada a Objetos con Java! ☕**
+
+[Ir a Semana 1](bootcamp/semana-01) | [Ver Documentación](_docs/) | [Reportar Issue](https://github.com/elparchetipk/bc-oop-java/issues)
+
+---
+
+Hecho con ❤️ por el equipo del SENA - 2025
+
+</div>
