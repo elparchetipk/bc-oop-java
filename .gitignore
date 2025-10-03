@@ -25,6 +25,12 @@ bin/
 .idea/
 *.iws
 *.ipr
+*.iml
+# Excepciones: mantener algunas configuraciones útiles
+!.idea/.gitignore
+!.idea/misc.xml
+!.idea/encodings.xml
+!.idea/codeStyles/
 
 # IDE - Eclipse
 .classpath
