@@ -12,7 +12,7 @@ Este directorio contiene recursos visuales en formato SVG para complementar el m
 
 ## 📁 Archivos Disponibles
 
-### 1. jdk-jre-jvm.svg
+### 1. 1-jdk-jre-jvm.svg
 **Descripción**: Arquitectura de la plataforma Java  
 **Temas relacionados**: 01-introduccion-java.md  
 **Conceptos visualizados**:
@@ -28,7 +28,25 @@ Este directorio contiene recursos visuales en formato SVG para complementar el m
 
 ---
 
-### 2. tipos-datos-primitivos.svg
+### 2. 2-compilacion-ejecucion.svg
+**Descripción**: Proceso completo de compilación y ejecución en Java  
+**Temas relacionados**: 01-introduccion-java.md  
+**Conceptos visualizados**:
+- Paso 1: Código fuente (.java)
+- Paso 2: Compilador Java (javac)
+- Paso 3: Bytecode (.class)
+- Paso 4: JVM con componentes (Class Loader, Verifier, Interpreter, JIT)
+- Paso 5: Ejecución multiplataforma (Windows, Linux, macOS)
+- Características: Portabilidad, Seguridad, Rendimiento
+
+**Flujo completo**:
+```
+.java → javac → .class → java → JVM → Ejecución
+```
+
+---
+
+### 3. 3-tipos-datos-primitivos.svg
 **Descripción**: Tipos de datos primitivos en Java  
 **Temas relacionados**: 03-tipos-datos.md  
 **Conceptos visualizados**:
@@ -45,7 +63,7 @@ Este directorio contiene recursos visuales en formato SVG para complementar el m
 
 ---
 
-### 3. operadores-java.svg
+### 4. 4-operadores-java.svg
 **Descripción**: Operadores y precedencia en Java  
 **Temas relacionados**: 04-operadores.md  
 **Conceptos visualizados**:
@@ -64,7 +82,7 @@ Este directorio contiene recursos visuales en formato SVG para complementar el m
 
 ---
 
-### 4. estructuras-control.svg
+### 5. 5-estructuras-control.svg
 **Descripción**: Diagramas de flujo de estructuras de control  
 **Temas relacionados**: 05-estructuras-control.md  
 **Conceptos visualizados**:
@@ -83,7 +101,7 @@ Este directorio contiene recursos visuales en formato SVG para complementar el m
 
 ---
 
-### 5. arrays-memoria.svg
+### 6. 6-arrays-memoria.svg
 **Descripción**: Estructura y representación en memoria de arrays  
 **Temas relacionados**: 06-arrays.md  
 **Conceptos visualizados**:
@@ -100,7 +118,7 @@ Este directorio contiene recursos visuales en formato SVG para complementar el m
 
 ---
 
-### 6. metodos-java.svg
+### 7. 7-metodos-java.svg
 **Descripción**: Anatomía de métodos y pila de llamadas  
 **Temas relacionados**: 07-metodos.md  
 **Conceptos visualizados**:
@@ -120,24 +138,6 @@ Este directorio contiene recursos visuales en formato SVG para complementar el m
 - Nombre: Naranja (#ff9f43)
 - Parámetros: Azul (#4a9eff)
 - Cuerpo: Rojo (#ff6b6b)
-
----
-
-### 7. compilacion-ejecucion.svg
-**Descripción**: Proceso completo de compilación y ejecución en Java  
-**Temas relacionados**: 01-introduccion-java.md  
-**Conceptos visualizados**:
-- Paso 1: Código fuente (.java)
-- Paso 2: Compilador Java (javac)
-- Paso 3: Bytecode (.class)
-- Paso 4: JVM con componentes (Class Loader, Verifier, Interpreter, JIT)
-- Paso 5: Ejecución multiplataforma (Windows, Linux, macOS)
-- Características: Portabilidad, Seguridad, Rendimiento
-
-**Flujo completo**:
-```
-.java → javac → .class → java → JVM → Ejecución
-```
 
 ---
 

@@ -24,7 +24,7 @@ Tipos de Datos
 
 ## 🔢 Tipos de Datos Primitivos
 
-![Tipos de Datos Primitivos](../0-assets/tipos-datos-primitivos.svg)
+![Tipos de Datos Primitivos](../0-assets/3-tipos-datos-primitivos.svg)
 
 ### 1. Tipos Enteros
 

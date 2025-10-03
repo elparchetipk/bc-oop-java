@@ -8,7 +8,7 @@ Los operadores son símbolos especiales que realizan operaciones sobre uno, dos 
 int resultado = 5 + 3;  // '+' es el operador, 5 y 3 son operandos
 ```
 
-![Operadores en Java](../0-assets/operadores-java.svg)
+![Operadores en Java](../0-assets/4-operadores-java.svg)
 
 ---
 

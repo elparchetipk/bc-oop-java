@@ -2,7 +2,7 @@
 
 Un **array** es una estructura de datos que almacena múltiples valores del mismo tipo en una sola variable.
 
-![Arrays en Java](../0-assets/arrays-memoria.svg)
+![Arrays en Java](../0-assets/6-arrays-memoria.svg)
 
 ---
 
