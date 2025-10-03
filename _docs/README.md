@@ -1,4 +1,32 @@
-# 📚 Documentación del Proyecto Bootcamp POO Java
+# 📚 D## 📖 Índice de Documentación
+
+### 🚀 Guías de Configuración
+
+- [**GUIA-INTELLIJ-SOURCE-ROOTS.md**](./GUIA-INTELLIJ-SOURCE-ROOTS.md) ⭐ **RECOMENDADA** - Guía simplificada usando estructura actual
+  - Configuración rápida con Source Roots
+  - Sin necesidad de migración
+  - Ideal para comenzar inmediatamente
+  - Paso a paso para estudiantes
+
+- [**GUIA-INTELLIJ-IDEA.md**](./GUIA-INTELLIJ-IDEA.md) - Configuración avanzada (completa)
+  - Estructura de proyecto multi-módulo
+  - Configuración inicial y personalización
+  - Atajos de teclado y productividad
+  - Debugging y resolución de problemas
+
+### 🎬 Recursos Visuales para Enseñanza
+
+- [**presentacion-intellij-setup.html**](./presentacion-intellij-setup.html) - Presentación interactiva (13 slides)
+  - Navegación con teclado
+  - Tema dark profesional
+  - Sin dependencias (funciona offline)
+  - Lista para proyectar en clase
+
+- [**GUIA-USO-RECURSOS-VISUALES.md**](./GUIA-USO-RECURSOS-VISUALES.md) - Cómo usar presentación y video
+  - Estrategias pedagógicas
+  - Guía para instructores
+  - Compartir con estudiantes
+  - Personalización y actualizaciónl Proyecto Bootcamp POO Java
 
 Bienvenido a la documentación técnica del Bootcamp de Programación Orientada a Objetos con Java.
 
@@ -20,24 +48,20 @@ Bienvenido a la documentación técnica del Bootcamp de Programación Orientada 
   - Atajos de teclado y productividad
   - Debugging y resolución de problemas
 
-### 🛠️ Scripts
+### 🛠️ Scripts de Automatización
 
-#### [scripts/migrate-to-intellij.sh](./scripts/migrate-to-intellij.sh)
-Script bash para migrar la estructura actual de ejercicios a la estructura recomendada de IntelliJ IDEA.
+- [**scripts/migrate-to-intellij.sh**](./scripts/migrate-to-intellij.sh) - Migración a estructura multi-módulo
+  - Reorganiza archivos automáticamente
+  - Agrega declaraciones de paquetes
+  - Crea estructura profesional
 
-**Funcionalidad:**
-- Crea estructura `src/main/java/com/sena/bootcamp/semanaXX`
-- Copia archivos Java agregando declaraciones de paquete
-- Genera archivo `.iml` para el módulo
-- Mantiene archivos originales como referencia
+- [**scripts/generate-video-tutorial.sh**](./scripts/generate-video-tutorial.sh) - Generador de video tutorial
+  - Crea video animado (1920x1080, ~72s)
+  - 9 slides con transiciones
+  - Opción de narración TTS
+  - Personalizable y regenerable
 
-**Uso:**
-```bash
-cd /ruta/al/proyecto/oop_java
-./_docs/scripts/migrate-to-intellij.sh
-```
-
-**Requisitos:** Bash 4.0+
+### 📄 Documentación del Bootcamp
 
 ---
 
