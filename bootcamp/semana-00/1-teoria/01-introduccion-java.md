@@ -25,6 +25,8 @@ Java es un lenguaje de programación de alto nivel, orientado a objetos y de pro
 Código Java (.java) → Compilador → Bytecode (.class) → JVM → Ejecución
 ```
 
+![Proceso de Compilación y Ejecución](../0-assets/compilacion-ejecucion.svg)
+
 #### 4. **Robusto y Seguro**
 - Fuertemente tipado
 - Manejo de excepciones
@@ -140,6 +142,8 @@ java -version
 - 💾 Gestión de memoria
 
 ### 📊 Diagrama de Relación
+
+![Arquitectura JDK/JRE/JVM](../0-assets/jdk-jre-jvm.svg)
 
 ```
 ┌─────────────────────────────────────┐

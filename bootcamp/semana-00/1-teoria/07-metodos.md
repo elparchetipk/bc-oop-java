@@ -2,6 +2,8 @@
 
 Los **métodos** son bloques de código reutilizables que realizan tareas específicas. Son fundamentales para organizar y modularizar el código.
 
+![Métodos en Java](../0-assets/metodos-java.svg)
+
 ---
 
 ## 🎯 ¿Qué es un Método?

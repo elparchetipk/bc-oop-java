@@ -2,6 +2,8 @@
 
 Las estructuras de control determinan el flujo de ejecución de un programa. Permiten tomar decisiones y repetir bloques de código.
 
+![Estructuras de Control](../0-assets/estructuras-control.svg)
+
 ---
 
 ## 🔀 Estructuras Condicionales
