@@ -7,6 +7,8 @@
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![SENA](https://img.shields.io/badge/SENA-Formación-green.svg)](https://www.sena.edu.co/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTORS.md)
 
 </div>
 
@@ -197,6 +199,35 @@ Si tienes preguntas o necesitas ayuda:
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
+## 🤝 Contribuir
+
+Este es un proyecto educativo del SENA. Si eres instructor o estudiante y deseas contribuir:
+
+1. Lee la [Guía de Contribución](CONTRIBUTING.md)
+2. Revisa el [Código de Conducta](CODE_OF_CONDUCT.md)
+3. Haz fork del repositorio
+4. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
+5. Commitea tus cambios (`git commit -m 'feat: add new exercise'`)
+6. Push a la rama (`git push origin feature/nueva-funcionalidad`)
+7. Abre un Pull Request
+
+### 📋 Áreas donde Puedes Contribuir
+
+- ✨ Ejercicios adicionales
+- 📚 Mejoras en documentación
+- 🐛 Corrección de errores
+- 🎨 Recursos visuales (diagramas UML)
+- 🌐 Traducciones
+- 📹 Videos tutoriales
+
+Ver [CONTRIBUTORS.md](CONTRIBUTORS.md) para la lista de contribuidores.
+
+---
+
+## 🔒 Seguridad
+
+Si encuentras un problema de seguridad, por favor revisa nuestra [Política de Seguridad](SECURITY.md) para reportarlo de manera responsable.
+
 ---
 
 ## 🏆 Agradecimientos
@@ -204,6 +235,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 - **SENA** - Servicio Nacional de Aprendizaje
 - **Oracle** - Por Java y su excelente documentación
 - **Comunidad Java** - Por los recursos y ejemplos
+- **Todos los contribuidores** - Ver [CONTRIBUTORS.md](CONTRIBUTORS.md)
 
 ---
 
@@ -212,6 +244,9 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 - [📖 Tema Completo](_docs/tema.md)
 - [🤖 Instrucciones de Copilot](.github/copilot-instructions.md)
 - [🔧 Setup de Auto-commit](.github/scripts/SETUP_AUTOCOMMIT.md)
+- [🤝 Guía de Contribución](CONTRIBUTING.md)
+- [📜 Código de Conducta](CODE_OF_CONDUCT.md)
+- [🔒 Política de Seguridad](SECURITY.md)
 
 ---
 
@@ -219,7 +254,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 **🚀 ¡Comienza tu viaje en la Programación Orientada a Objetos con Java! ☕**
 
-[Ir a Semana 1](bootcamp/semana-01) | [Ver Documentación](_docs/) | [Reportar Issue](https://github.com/elparchetipk/bc-oop-java/issues)
+[Ir a Semana 0](bootcamp/semana-00) | [Ver Documentación](_docs/) | [Reportar Issue](https://github.com/elparchetipk/bc-oop-java/issues) | [Contribuir](CONTRIBUTING.md)
 
 ---
 
