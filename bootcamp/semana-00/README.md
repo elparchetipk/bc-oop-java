@@ -6,6 +6,19 @@ Esta semana de nivelación está diseñada para estudiantes que necesitan reforz
 
 ---
 
+## 🚀 Configuración del Entorno
+
+Antes de comenzar con los ejercicios, configura tu entorno de desarrollo:
+
+### IntelliJ IDEA (Recomendado)
+📖 **[Ver Instrucciones de Configuración](./INSTRUCCIONES-INTELLIJ.md)** - Guía paso a paso en 5 minutos
+
+### VS Code
+- Instalar extensión "Extension Pack for Java"
+- Configurar JDK 21 en settings
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Al finalizar esta semana, el estudiante será capaz de:

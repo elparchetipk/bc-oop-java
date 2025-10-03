@@ -1,26 +1,24 @@
-# 📚 Documentación del Proyecto - Bootcamp POO Java
+# 📚 Documentación del Proyecto Bootcamp POO Java
 
-Este directorio contiene documentación técnica, guías y scripts para el desarrollo y gestión del bootcamp.
-
-## 📁 Contenido
-
-### 📖 Guías
-
-#### [GUIA-INTELLIJ-IDEA.md](./GUIA-INTELLIJ-IDEA.md)
-Guía completa para configurar y usar IntelliJ IDEA con el proyecto del bootcamp.
-
-**Incluye:**
-- ✅ Estructura recomendada de proyecto
-- ✅ Configuración inicial paso a paso
-- ✅ Importar y configurar módulos
-- ✅ Atajos de teclado esenciales
-- ✅ Plugins recomendados
-- ✅ Debugging y troubleshooting
-- ✅ Convenciones de código
-
-**Audiencia:** Instructores y estudiantes
+Bienvenido a la documentación técnica del Bootcamp de Programación Orientada a Objetos con Java.
 
 ---
+
+## � Índice de Documentación
+
+### � Guías de Configuración
+
+- [**GUIA-INTELLIJ-SOURCE-ROOTS.md**](./GUIA-INTELLIJ-SOURCE-ROOTS.md) ⭐ **RECOMENDADA** - Guía simplificada usando estructura actual
+  - Configuración rápida con Source Roots
+  - Sin necesidad de migración
+  - Ideal para comenzar inmediatamente
+  - Paso a paso para estudiantes
+
+- [**GUIA-INTELLIJ-IDEA.md**](./GUIA-INTELLIJ-IDEA.md) - Configuración avanzada (completa)
+  - Estructura de proyecto multi-módulo
+  - Configuración inicial y personalización
+  - Atajos de teclado y productividad
+  - Debugging y resolución de problemas
 
 ### 🛠️ Scripts
 
