@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![SENA](https://img.shields.io/badge/SENA-Formación-green.svg)](https://www.sena.edu.co/)
 
-> Bootcamp intensivo de 9 semanas enfocado en análisis, diseño y programación orientada a objetos utilizando Java y UML.
+> Bootcamp intensivo de 10 semanas enfocado en análisis, diseño y programación orientada a objetos utilizando Java y UML.
 
 ---
 
@@ -25,7 +25,8 @@ Este bootcamp está diseñado para desarrollar competencias sólidas en **Análi
 
 | Semana | Tema Principal | Duración |
 |--------|---------------|----------|
-| **1** | [Introducción a Java y POO](bootcamp/semana-01) | 4 horas |
+| **0** | [Fundamentos de Java (Nivelación)](bootcamp/semana-00) | 4 horas |
+| **1** | [Introducción a POO](bootcamp/semana-01) | 4 horas |
 | **2** | [Fundamentos de Clases y Objetos](bootcamp/semana-02) | 4 horas |
 | **3** | [Encapsulación y Constructores](bootcamp/semana-03) | 4 horas |
 | **4** | [Herencia](bootcamp/semana-04) | 4 horas |
@@ -35,7 +36,7 @@ Este bootcamp está diseñado para desarrollar competencias sólidas en **Análi
 | **8** | [Colecciones y Programación Genérica](bootcamp/semana-08) | 4 horas |
 | **9** | [Proyecto Final Aplicado](bootcamp/semana-09) | 4 horas |
 
-**Total**: 36 horas de formación intensiva
+**Total**: 40 horas de formación intensiva
 
 ---
 

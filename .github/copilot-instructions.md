@@ -1,7 +1,7 @@
 # Instrucciones para GitHub Copilot - Bootcamp POO Java
 
 ## Contexto del Proyecto
-Este es un bootcamp de **9 semanas** de duración con **1 sesión de 4 horas por semana** (36 horas totales) enfocado en **Diseño y Programación Orientada a Objetos con Java**.
+Este es un bootcamp de **10 semanas** de duración con **1 sesión de 4 horas por semana** (40 horas totales) enfocado en **Diseño y Programación Orientada a Objetos con Java**.
 
 ## Objetivo General
 Desarrollar competencias en análisis y diseño orientado a objetos, modelado UML, y programación Java aplicando los principios fundamentales de la POO.
@@ -56,22 +56,46 @@ bootcamp/
 
 ---
 
-## Temario del Bootcamp (9 Semanas)
+## Temario del Bootcamp (10 Semanas)
 
-### **Semana 1 – Introducción a Java y Paradigma Orientado a Objetos**
+### **Semana 0 – Fundamentos de Java (Nivelación)**
+**Duración**: 4 horas
+
+**Temas**:
+- Instalación y configuración del entorno (JDK, IDE)
+- Sintaxis básica de Java: variables, tipos de datos primitivos
+- Operadores aritméticos, relacionales y lógicos
+- Estructuras de control: if-else, switch-case
+- Bucles: for, while, do-while
+- Arrays unidimensionales
+- Métodos estáticos básicos
+- Entrada/salida con Scanner
+
+**Evidencias**:
+- **Conocimiento**: Cuestionarios sobre sintaxis básica, tipos de datos y operadores
+- **Desempeño**: Ejercicios con estructuras de control, arrays y métodos
+- **Producto**: Programa integrador que use variables, estructuras de control, arrays y métodos
+
+**Estrategias**: Talleres prácticos guiados, codificación en vivo, ejercicios progresivos
+
+**Nota**: Esta semana es opcional pero altamente recomendada para estudiantes sin experiencia previa en Java.
+
+---
+
+### **Semana 1 – Introducción al Paradigma Orientado a Objetos**
 **Duración**: 4 horas
 
 **Temas**:
 - Historia y características de Java
 - Diferencias entre programación estructurada y POO
-- Configuración del entorno (JDK, IDEs: IntelliJ, VS Code)
-- Primer programa en Java (Hello World)
-- Sintaxis básica: tipos de datos, operadores, estructuras de control
+- Conceptos fundamentales de POO: clases, objetos, atributos, métodos
+- Primer programa orientado a objetos
+- Ventajas de la POO
 
 **Evidencias**:
-- **Conocimiento**: Cuestionario sobre historia de Java, POO vs estructurado y sintaxis básica
-- **Desempeño**: Instalación del entorno (JDK + IDE) y ejecución de "Hello World"
-- **Producto**: Documento con capturas del entorno configurado y código comentado
+- **Conocimiento**: Cuestionario sobre POO vs estructurado y conceptos fundamentales
+- **Desempeño**: Crear una clase simple con atributos y métodos
+- **Producto**: Documento comparativo entre paradigmas con ejemplos
 
 **Estrategias**: Clase invertida, codificación en vivo
 
@@ -398,6 +422,7 @@ Asegúrate de que cada semana:
 
 ```
 bootcamp/
+  semana-00/ → Fundamentos de Java (Nivelación)
   semana-01/ → Introducción a Java y POO
   semana-02/ → Clases y Objetos
   semana-03/ → Encapsulación y Constructores
