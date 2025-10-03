@@ -43,18 +43,52 @@ Código Java (.java) → Compilador → Bytecode (.class) → JVM → Ejecución
 
 ## 🏛️ Historia de Java
 
-### Línea de Tiempo
+### Línea de Tiempo Completa
 
 | Año | Versión | Destacado |
 |-----|---------|-----------|
-| **1995** | Java 1.0 | Lanzamiento inicial |
-| **1998** | Java 2 (J2SE 1.2) | Swing, Collections |
-| **2004** | Java 5 | Generics, Enums, Autoboxing |
-| **2011** | Java 7 | Try-with-resources, Diamond operator |
-| **2014** | Java 8 | Lambdas, Stream API, Date/Time API |
-| **2017** | Java 9 | Módulos (Project Jigsaw) |
-| **2021** | Java 17 LTS | Records, Sealed classes |
-| **2023** | Java 21 LTS | Virtual Threads, Pattern Matching |
+| **1995** | Java 1.0 | 🎉 Lanzamiento inicial - "Oak" |
+| **1996** | Java 1.1 | Inner classes, JavaBeans, JDBC |
+| **1998** | Java 2 (J2SE 1.2) | Swing, Collections Framework |
+| **2000** | Java 1.3 | HotSpot JVM, JNDI |
+| **2002** | Java 1.4 | Assert, Regex, NIO |
+| **2004** | Java 5 (1.5) | 🌟 Generics, Enums, Autoboxing, For-each |
+| **2006** | Java 6 | Scripting, JDBC 4.0, mejoras de performance |
+| **2011** | Java 7 | Try-with-resources, Diamond operator, Strings en switch |
+| **2014** | Java 8 LTS | 🔥 Lambdas, Stream API, Optional, Date/Time API |
+| **2017** | Java 9 | Project Jigsaw (Módulos), JShell, HTTP/2 Client |
+| **2018** | Java 10 | `var` para inferencia de tipos locales |
+| **2018** | Java 11 LTS | HTTP Client, String methods, `var` en lambdas |
+| **2019** | Java 12 | Switch expressions (preview), Shenandoah GC |
+| **2019** | Java 13 | Text blocks (preview), mejoras en switch |
+| **2020** | Java 14 | Records (preview), Pattern matching (preview) |
+| **2020** | Java 15 | Text blocks, Sealed classes (preview) |
+| **2021** | Java 16 | Records, Pattern matching for instanceof |
+| **2021** | Java 17 LTS | ⭐ Sealed classes, Pattern matching, Records estables |
+| **2022** | Java 18 | UTF-8 por defecto, Simple Web Server |
+| **2022** | Java 19 | Virtual Threads (preview), Pattern matching mejoras |
+| **2023** | Java 20 | Scoped Values (preview), Record patterns |
+| **2023** | Java 21 LTS | 🚀 Virtual Threads, Pattern Matching mejorado, Sequenced Collections |
+| **2024** | Java 22 | Unnamed variables, FFM (Foreign Function & Memory) API |
+| **2024** | Java 23 | Primitive types in patterns, Module import declarations |
+| **2025** | Java 24 | Stream Gatherers, mejoras en performance |
+
+### 📊 Ciclo de Releases
+
+**Desde Java 9 (2017):**
+- 🗓️ Nueva versión cada **6 meses** (marzo y septiembre)
+- 🔒 Versión **LTS** cada **3 años** (soporte extendido)
+- ⚡ Versiones intermedias con soporte de **6 meses**
+
+### 🏆 Versiones LTS (Long-Term Support)
+
+| Versión | Lanzamiento | Fin de Soporte | Estado |
+|---------|-------------|----------------|--------|
+| Java 8 | Marzo 2014 | Diciembre 2030 | 🟢 Activo |
+| Java 11 | Septiembre 2018 | Septiembre 2026 | 🟢 Activo |
+| Java 17 | Septiembre 2021 | Septiembre 2029 | 🟢 Activo |
+| Java 21 | Septiembre 2023 | Septiembre 2031 | 🟢 Activo |
+| Java 25 | Septiembre 2025 | Septiembre 2033 | 🔵 Próxima |
 
 ### 💡 Dato Curioso
 
@@ -197,26 +231,54 @@ java -version
 
 ---
 
-## 📦 Versiones de Java
+## 📦 Versiones de Java en 2025
 
 ### Tipos de Releases
 
 1. **LTS (Long-Term Support)** 🔒
-   - Soporte extendido (años)
+   - Soporte extendido de **8 años** mínimo
+   - Actualizaciones de seguridad garantizadas
    - Recomendado para producción
-   - Ejemplos: Java 8, 11, 17, 21
+   - Ejemplos: Java 8, 11, 17, 21, (25 próximo)
 
-2. **Non-LTS** ⚡
-   - Soporte por 6 meses
-   - Características más nuevas
-   - Para experimentación
+2. **Non-LTS (Feature Releases)** ⚡
+   - Soporte por **6 meses** únicamente
+   - Características experimentales
+   - Para pruebas y experimentación
+   - Ejemplos: Java 18, 19, 20, 22, 23, 24
 
-### ¿Cuál Usar?
+### ¿Cuál Versión Usar en 2025?
 
-**Para aprender:** Java 17 LTS (o superior)
-- Características modernas
-- Soporte a largo plazo
-- Balance entre novedad y estabilidad
+#### Para Aprender (Este Bootcamp)
+**Java 21 LTS** ⭐ Recomendado
+- Versión LTS más reciente estable
+- Virtual Threads para concurrencia moderna
+- Pattern Matching mejorado
+- Records y Sealed classes
+- Todas las características modernas de Java
+
+**Alternativa: Java 17 LTS**
+- También excelente para aprender
+- Ampliamente usado en la industria
+- Todas las características esenciales
+
+#### Para Producción
+- **Java 21 LTS**: Proyectos nuevos
+- **Java 17 LTS**: Proyectos existentes (muy usado)
+- **Java 11 LTS**: Legado, aún con soporte hasta 2026
+- **Java 8 LTS**: Legado extendido, soporte hasta 2030
+
+#### Para Experimentación
+- **Java 24**: Última versión con features experimentales
+
+### 🎯 Recomendación para este Bootcamp
+
+Usaremos **Java 21 LTS** porque:
+- ✅ Es la versión LTS más moderna
+- ✅ Incluye todas las mejoras desde Java 8
+- ✅ Prepara para el futuro del desarrollo Java
+- ✅ Sintaxis más limpia y expresiva
+- ✅ Mejor rendimiento y herramientas
 
 ---
 
