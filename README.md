@@ -1,8 +1,14 @@
-# Bootcamp: Diseño y Programación Orientada a Objetos con Java ☕
+<div align="center">
+  <img src="assets/bootcamp-header.svg" alt="Bootcamp POO Java Header" width="100%"/>
+</div>
+
+<div align="center">
 
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![SENA](https://img.shields.io/badge/SENA-Formación-green.svg)](https://www.sena.edu.co/)
+
+</div>
 
 > Bootcamp intensivo de 10 semanas enfocado en análisis, diseño y programación orientada a objetos utilizando Java y UML.
 
