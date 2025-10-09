@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #34495e; }
+      .text { font-family: Arial, sans-serif; font-size: 14px; fill: #2c3e50; }
+      .small-text { font-family: Arial, sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .code { font-family: 'Courier New', monospace; font-size: 12px; fill: #2c3e50; }
+      .capsule { fill: #fff; stroke: #34495e; stroke-width: 3; }
+      .private-area { fill: #ffebee; }
+      .public-area { fill: #e8f5e9; }
+      .lock-icon { fill: #e74c3c; }
+      .unlock-icon { fill: #27ae60; }
+      .access-denied { fill: #e74c3c; opacity: 0.7; }
+      .access-allowed { fill: #27ae60; opacity: 0.7; }
+    </style>
+    <marker id="arrow-denied" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#e74c3c" />
+    </marker>
+    <marker id="arrow-allowed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#27ae60" />
+    </marker>
+  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Título -->
+  <text x="450" y="40" text-anchor="middle" class="title">Encapsulación en POO</text>
+  <text x="450" y="65" text-anchor="middle" class="small-text">Protegiendo los datos y controlando el acceso</text>
+
+  <!-- PARTE SUPERIOR: CONCEPTO VISUAL DE CÁPSULA -->
+  <g id="capsula-concepto">
+    <!-- Cápsula exterior -->
+    <ellipse cx="450" cy="200" rx="250" ry="120" class="capsule"/>
+
+    <!-- Zona privada (interior) -->
+    <ellipse cx="450" cy="200" rx="180" ry="80" class="private-area" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5"/>
+
+    <!-- Iconos de candado -->
+    <g transform="translate(350, 180)">
+      <rect x="0" y="10" width="20" height="25" rx="3" class="lock-icon"/>
+      <circle cx="10" cy="10" r="12" fill="none" stroke="#e74c3c" stroke-width="3"/>
+      <text x="30" y="28" class="small-text" fill="#e74c3c" font-weight="bold">private</text>
+    </g>
+
+    <g transform="translate(520, 180)">
+      <rect x="0" y="10" width="20" height="25" rx="3" class="lock-icon"/>
+      <circle cx="10" cy="10" r="12" fill="none" stroke="#e74c3c" stroke-width="3"/>
+      <text x="30" y="28" class="small-text" fill="#e74c3c" font-weight="bold">private</text>
+    </g>
+
+    <!-- Atributos privados -->
+    <text x="450" y="195" text-anchor="middle" class="code" font-weight="bold">private String nombre;</text>
+    <text x="450" y="215" text-anchor="middle" class="code" font-weight="bold">private int edad;</text>
+
+    <!-- Zona pública (exterior) -->
+    <text x="280" y="250" class="small-text" fill="#27ae60" font-weight="bold">🔓 public métodos</text>
+    <text x="540" y="250" class="small-text" fill="#27ae60" font-weight="bold">🔓 public métodos</text>
+
+    <!-- Título de la cápsula -->
+    <text x="450" y="150" text-anchor="middle" class="subtitle">Clase Encapsulada</text>
+  </g>
+
+  <!-- PARTE MEDIA: COMPARACIÓN SIN vs CON ENCAPSULACIÓN -->
+  <g id="comparacion">
+    <text x="450" y="350" text-anchor="middle" class="subtitle">¿Por qué encapsular?</text>
+
+    <!-- SIN ENCAPSULACIÓN -->
+    <g id="sin-encapsulacion">
+      <rect x="50" y="370" width="380" height="160" rx="8" fill="#ffebee" stroke="#e74c3c" stroke-width="2"/>
+
+      <text x="240" y="395" text-anchor="middle" class="text" font-weight="bold" fill="#e74c3c">❌ Sin Encapsulación</text>
+
+      <text x="70" y="420" class="code">public class Persona {</text>
+      <text x="90" y="440" class="code" style="fill: #e74c3c; font-weight: bold;">public int edad;</text>
+      <text x="70" y="460" class="code">}</text>
+
+      <text x="70" y="485" class="small-text">Problemas:</text>
+      <text x="85" y="502" class="small-text">• Acceso directo sin control</text>
+      <text x="85" y="517" class="small-text">• Valores inválidos: persona.edad = -5;</text>
+    </g>
+
+    <!-- CON ENCAPSULACIÓN -->
+    <g id="con-encapsulacion">
+      <rect x="470" y="370" width="380" height="160" rx="8" fill="#e8f5e9" stroke="#27ae60" stroke-width="2"/>
+
+      <text x="660" y="395" text-anchor="middle" class="text" font-weight="bold" fill="#27ae60">✓ Con Encapsulación</text>
+
+      <text x="490" y="420" class="code">public class Persona {</text>
+      <text x="510" y="440" class="code" style="fill: #27ae60; font-weight: bold;">private int edad;</text>
+      <text x="510" y="460" class="code">public void setEdad(int e) { ... }</text>
+      <text x="490" y="480" class="code">}</text>
+
+      <text x="490" y="505" class="small-text">Ventajas:</text>
+      <text x="505" y="522" class="small-text">✓ Control de acceso y validación</text>
+    </g>
+  </g>
+
+  <!-- PARTE INFERIOR: ACCESO CONTROLADO -->
+  <g id="acceso-controlado">
+    <text x="450" y="560" text-anchor="middle" class="subtitle">Acceso Controlado con Getters y Setters</text>
+
+    <rect x="100" y="575" width="700" height="100" rx="8" fill="#f8f9fa" stroke="#95a5a6" stroke-width="2"/>
+
+    <!-- Código ejemplo -->
+    <text x="120" y="600" class="code">public class CuentaBancaria {</text>
+    <text x="140" y="620" class="code" style="fill: #e74c3c; font-weight: bold;">private double saldo;</text>
+    <text x="140" y="640" class="small-text" fill="#7f8c8d;">// Nadie puede modificar directamente el saldo</text>
+
+    <text x="450" y="600" class="code" style="fill: #27ae60; font-weight: bold;">public double getSaldo() {</text>
+    <text x="470" y="615" class="code">return saldo;</text>
+    <text x="450" y="630" class="code">}</text>
+    <text x="450" y="650" class="small-text" fill="#7f8c8d;">// Método público para consultar</text>
+
+    <text x="650" y="600" class="code" style="fill: #27ae60; font-weight: bold;">public void depositar(double cantidad) {</text>
+    <text x="670" y="615" class="code">if (cantidad > 0)</text>
+    <text x="690" y="630" class="code">saldo += cantidad;</text>
+    <text x="650" y="645" class="code">}</text>
+    <text x="650" y="660" class="small-text" fill="#7f8c8d;">// Control: solo valores positivos</text>
+  </g>
+
+  <!-- BENEFICIOS EN RECUADRO INFERIOR -->
+  <g id="beneficios">
+    <rect x="50" y="685" width="800" height="5" fill="#27ae60"/>
+
+    <text x="100" y="705" class="small-text" font-weight="bold">Beneficios de la Encapsulación:</text>
+    <text x="120" y="722" class="small-text">✓ Ocultar implementación interna</text>
+    <text x="350" y="722" class="small-text">✓ Validar datos antes de asignarlos</text>
+    <text x="600" y="722" class="small-text">✓ Proteger la integridad del objeto</text>
+  </g>
+</svg>
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #34495e; }
+      .text { font-family: Arial, sans-serif; font-size: 14px; fill: #2c3e50; }
+      .small-text { font-family: Arial, sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .code { font-family: 'Courier New', monospace; font-size: 13px; fill: #2c3e50; }
+      .class-box { fill: #fff; stroke: #3498db; stroke-width: 3; }
+      .section-header { fill: #3498db; }
+      .section-atributos { fill: #e3f2fd; }
+      .section-metodos { fill: #fff3e0; }
+      .label-box { fill: #27ae60; opacity: 0.9; }
+      .label-text { font-family: Arial, sans-serif; font-size: 12px; fill: white; font-weight: bold; }
+      .arrow { fill: none; stroke: #27ae60; stroke-width: 2; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#27ae60" />
+    </marker>
+  </defs>
+
+  <!-- Título -->
+  <text x="450" y="40" text-anchor="middle" class="title">Anatomía de una Clase en Java</text>
+  <text x="450" y="65" text-anchor="middle" class="small-text">Estructura y componentes principales</text>
+
+  <!-- CLASE PRINCIPAL -->
+  <g id="clase-persona">
+    <rect x="200" y="100" width="500" height="450" rx="10" class="class-box"/>
+
+    <!-- 1. CABECERA DE CLASE -->
+    <rect x="200" y="100" width="500" height="50" rx="10" class="section-header"/>
+    <text x="210" y="125" class="code" fill="white">public class Persona {</text>
+
+    <!-- 2. SECCIÓN DE ATRIBUTOS -->
+    <rect x="200" y="150" width="500" height="140" class="section-atributos"/>
+    <text x="220" y="175" class="text" font-weight="bold">// ATRIBUTOS (Estado)</text>
+    <text x="240" y="200" class="code">private String nombre;</text>
+    <text x="240" y="225" class="code">private int edad;</text>
+    <text x="240" y="250" class="code">private double altura;</text>
+    <text x="240" y="275" class="code">private String email;</text>
+
+    <!-- 3. SECCIÓN DE CONSTRUCTORES -->
+    <rect x="200" y="290" width="500" height="90" fill="white"/>
+    <text x="220" y="315" class="text" font-weight="bold">// CONSTRUCTOR</text>
+    <text x="240" y="340" class="code">public Persona(String nombre, int edad) {</text>
+    <text x="260" y="360" class="code">this.nombre = nombre;</text>
+    <text x="260" y="375" class="code">this.edad = edad;</text>
+    <text x="240" y="390" class="code">}</text>
+
+    <!-- 4. SECCIÓN DE MÉTODOS -->
+    <rect x="200" y="380" width="500" height="140" class="section-metodos"/>
+    <text x="220" y="405" class="text" font-weight="bold">// MÉTODOS (Comportamiento)</text>
+    <text x="240" y="430" class="code">public void saludar() {</text>
+    <text x="260" y="450" class="code">System.out.println("Hola, soy " + nombre);</text>
+    <text x="240" y="470" class="code">}</text>
+    <text x="240" y="495" class="code">public int calcularEdad() { ... }</text>
+
+    <!-- 5. CIERRE DE CLASE -->
+    <text x="210" y="540" class="code">}</text>
+  </g>
+
+  <!-- ETIQUETAS EXPLICATIVAS -->
+
+  <!-- Etiqueta: Modificador de acceso -->
+  <rect x="50" y="115" width="130" height="25" rx="5" class="label-box"/>
+  <text x="115" y="132" text-anchor="middle" class="label-text">MODIFICADOR</text>
+  <path d="M 180 127 L 200 127" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Etiqueta: Nombre de clase -->
+  <rect x="720" y="115" width="150" height="25" rx="5" class="label-box"/>
+  <text x="795" y="132" text-anchor="middle" class="label-text">NOMBRE DE CLASE</text>
+  <path d="M 700 127 L 720 127" class="arrow" marker-end="url(#arrowhead)" transform="rotate(180 710 127)"/>
+
+  <!-- Etiqueta: Atributos -->
+  <rect x="50" y="205" width="130" height="25" rx="5" class="label-box"/>
+  <text x="115" y="222" text-anchor="middle" class="label-text">ATRIBUTOS</text>
+  <path d="M 180 217 L 200 217" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Etiqueta: Constructor -->
+  <rect x="720" y="325" width="150" height="25" rx="5" class="label-box"/>
+  <text x="795" y="342" text-anchor="middle" class="label-text">CONSTRUCTOR</text>
+  <path d="M 700 337 L 720 337" class="arrow" marker-end="url(#arrowhead)" transform="rotate(180 710 337)"/>
+
+  <!-- Etiqueta: Métodos -->
+  <rect x="50" y="425" width="130" height="25" rx="5" class="label-box"/>
+  <text x="115" y="442" text-anchor="middle" class="label-text">MÉTODOS</text>
+  <path d="M 180 437 L 200 437" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Nota informativa -->
+  <text x="450" y="580" text-anchor="middle" class="small-text" font-style="italic">
+    Una clase define la ESTRUCTURA y COMPORTAMIENTO de los objetos
+  </text>
+</svg>
