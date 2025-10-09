@@ -2,16 +2,19 @@
 
 ## 📊 Recursos Gráficos
 
-Esta carpeta contiene recursos visuales (diagramas SVG) para complementar el material teórico de la Semana 02 sobre **Fundamentos de Clases y Objetos**.
+Esta carpeta contiene recursos visuales (diagramas SVG) para complementar el material teórico de la Semana 02 sobre *
+*Fundamentos de Clases y Objetos**.
 
 ---
 
 ## 🎨 Diagramas Disponibles
 
 ### 1. `1-anatomia-clase.svg`
+
 **Descripción:** Estructura completa de una clase Java
 
 **Contenido:**
+
 - Modificadores de acceso (public, private)
 - Sección de atributos (estado del objeto)
 - Sección de constructores
@@ -24,9 +27,11 @@ Esta carpeta contiene recursos visuales (diagramas SVG) para complementar el mat
 ---
 
 ### 2. `2-objeto-vs-clase.svg`
+
 **Descripción:** Diferencias visuales entre clase y objeto
 
 **Contenido:**
+
 - Lado izquierdo: Clase como plantilla abstracta
 - Lado derecho: Múltiples objetos con valores específicos
 - Flecha de instanciación con operador "new"
@@ -43,9 +48,11 @@ Esta carpeta contiene recursos visuales (diagramas SVG) para complementar el mat
 ---
 
 ### 3. `3-instanciacion-memoria.svg`
+
 **Descripción:** Proceso de instanciación en memoria (Stack y Heap)
 
 **Contenido:**
+
 - Paso 1: Código Java con operador "new"
 - Paso 2: Organización de memoria:
   - **STACK (Pila)**: almacena referencias y variables locales
@@ -64,9 +71,11 @@ Esta carpeta contiene recursos visuales (diagramas SVG) para complementar el mat
 ---
 
 ### 4. `4-atributos-vs-metodos.svg`
+
 **Descripción:** Comparación entre atributos y métodos (Estado vs Comportamiento)
 
 **Contenido:**
+
 - Lado izquierdo: **ATRIBUTOS** 📊
   - Definición: Variables que definen el estado
   - Ejemplo de código con clase Coche
@@ -84,9 +93,11 @@ Esta carpeta contiene recursos visuales (diagramas SVG) para complementar el mat
 ---
 
 ### 5. `5-encapsulacion-visual.svg`
+
 **Descripción:** Concepto visual de encapsulación
 
 **Contenido:**
+
 - Concepto de cápsula protectora:
   - Zona privada (interior): atributos private con candados 🔒
   - Zona pública (exterior): métodos public de acceso 🔓
@@ -139,6 +150,7 @@ Esta carpeta contiene recursos visuales (diagramas SVG) para complementar el mat
 **Dimensiones:** 900x600 px (diagramas 1,2,4,5) / 900x700 px (diagrama 3)
 
 **Paleta de colores:**
+
 - Azul principal: `#3498db` (clases, atributos)
 - Verde éxito: `#27ae60` (objetos, métodos públicos)
 - Rojo alerta: `#e74c3c` (privado, problemas)
@@ -148,10 +160,12 @@ Esta carpeta contiene recursos visuales (diagramas SVG) para complementar el mat
 - Fondos: `#f8f9fa`, `#ecf0f1`
 
 **Fuentes:**
+
 - Títulos y texto: Arial, sans-serif
 - Código: 'Courier New', monospace
 
 **Accesibilidad:**
+
 - Texto legible (tamaño mínimo 12px)
 - Alto contraste
 - Etiquetas descriptivas
@@ -160,29 +174,32 @@ Esta carpeta contiene recursos visuales (diagramas SVG) para complementar el mat
 
 ## 🔄 Relación con Contenido Teórico
 
-| Diagrama | Archivo de Teoría | Sección |
-|----------|-------------------|---------|
-| `1-anatomia-clase.svg` | `01-concepto-clase.md` | Componentes de una clase |
-| `2-objeto-vs-clase.svg` | `01-concepto-clase.md` + `02-concepto-objeto.md` | Diferencias fundamentales |
-| `3-instanciacion-memoria.svg` | `02-concepto-objeto.md` | Operador new y memoria |
-| `4-atributos-vs-metodos.svg` | `03-atributos-metodos.md` | Estado vs Comportamiento |
-| `5-encapsulacion-visual.svg` | `05-encapsulacion-basica.md` | Modificadores de acceso |
+| Diagrama                      | Archivo de Teoría                                | Sección                   |
+|-------------------------------|--------------------------------------------------|---------------------------|
+| `1-anatomia-clase.svg`        | `01-concepto-clase.md`                           | Componentes de una clase  |
+| `2-objeto-vs-clase.svg`       | `01-concepto-clase.md` + `02-concepto-objeto.md` | Diferencias fundamentales |
+| `3-instanciacion-memoria.svg` | `02-concepto-objeto.md`                          | Operador new y memoria    |
+| `4-atributos-vs-metodos.svg`  | `03-atributos-metodos.md`                        | Estado vs Comportamiento  |
+| `5-encapsulacion-visual.svg`  | `05-encapsulacion-basica.md`                     | Modificadores de acceso   |
 
 ---
 
 ## 📚 Recomendaciones de Uso Didáctico
 
 ### Estrategia 1: Clase Invertida
+
 1. Compartir diagramas como material previo
 2. Estudiantes los analizan en casa
 3. Sesión presencial para resolver dudas
 
 ### Estrategia 2: Aprendizaje Activo
+
 1. Proyectar diagrama
 2. Pedir a estudiantes identificar componentes
 3. Discusión grupal
 
 ### Estrategia 3: Evaluación Formativa
+
 1. Usar diagramas en quizzes
 2. Pedir completar partes faltantes
 3. Identificar errores conceptuales
