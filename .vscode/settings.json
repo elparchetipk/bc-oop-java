@@ -1,5 +1,15 @@
 {
+  // Editor: Solo una pestaña visible y cierre automático de editores inactivos
   "workbench.editor.showTabs": "single",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 3,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.editor.revealIfOpen": true,
+  
+  // Tema y colores personalizados
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#fefb2d",
     "activityBar.background": "#fefb2d",

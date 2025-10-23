@@ -102,3 +102,17 @@ build/
 # Virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# Asignación de dominios por estudiante (protección de identidad)
+# Estas carpetas contienen información personal de los aprendices
+# y se comparten por medios privados/seguros
+# Archivos de estudiantes (privacidad)
+bootcamp/semana-*/4. asignación_dominios/fichas/*.zip
+bootcamp/semana-*/4. asignación_dominios/fichas/*/
+
+# Sistema de evaluación automatizada (contiene credenciales y datos sensibles)
+_docs/evaluacion/
+!_docs/evaluacion/README.md
+!_docs/evaluacion/requirements.txt
+!_docs/evaluacion/.env.example
+_docs/fichas/
