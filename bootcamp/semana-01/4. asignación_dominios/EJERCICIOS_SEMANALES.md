@@ -6,7 +6,25 @@
 **Tipo:** Entregables obligatorios para evaluación automática  
 **Peso en la evaluación:** 40% (Desempeño) + 30% (Producto) = 70% total  
 **Fecha límite:** Final de la Semana 01  
-**Formato de entrega:** Archivos `.java` compilables + documento `.md`
+**Formato de entrega:** Repositorio GitHub (ver especificaciones abajo)
+
+---
+
+## 🔴 IMPORTANTE: Formato de Entrega
+
+**Antes de comenzar, lee detenidamente:**
+
+### 📄 [FORMATO_ENTREGA.md](./FORMATO_ENTREGA.md)
+
+Este documento define de forma **ESPECÍFICA y OBLIGATORIA**:
+- ✅ Nomenclatura exacta del repositorio GitHub
+- ✅ Estructura de carpetas (`semana-01/src/`, `semana-01/docs/`)
+- ✅ Nombres de archivos (PascalCase para clases, `Main.java`, `ANALISIS.md`)
+- ✅ Convenciones de código (camelCase, PascalCase, UPPER_SNAKE_CASE)
+- ✅ Contenido del .gitignore
+- ✅ Checklist completo de verificación
+
+**⚠️ Entregas que NO sigan el formato especificado serán penalizadas.**
 
 ---
 

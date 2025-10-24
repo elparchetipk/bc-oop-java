@@ -23,6 +23,7 @@ Cada estudiante trabajará con un dominio de negocio específico (Agencia de Via
 4. asignación_dominios/
 ├── README.md (este archivo)
 ├── EJERCICIOS_SEMANALES.md (⭐ IMPORTANTE - Lee esto primero)
+├── FORMATO_ENTREGA.md (🔴 CRÍTICO - Formato de entrega en GitHub)
 └── fichas/
     ├── 3228970A/
     │   ├── ESTUDIANTE_1.md
@@ -51,6 +52,24 @@ Este archivo contiene:
 
 **Puntuación total:** 100 puntos  
 **Peso en la evaluación:** 70% de la nota final de la semana
+
+---
+
+## 📦 Formato de Entrega en GitHub
+
+**🔴 CRÍTICO:** Revisa el formato ESPECÍFICO de entrega:
+
+### 📄 [FORMATO_ENTREGA.md](./FORMATO_ENTREGA.md)
+
+Este archivo contiene:
+- ✅ Nomenclatura exacta del repositorio GitHub
+- ✅ Estructura de carpetas obligatoria
+- ✅ Convenciones de nombres de archivos
+- ✅ Formato de commits y documentación
+- ✅ Checklist completo de verificación
+- ✅ Ejemplos paso a paso
+
+**⚠️ Entregas que NO sigan este formato serán penalizadas.**
 
 ---
 
@@ -98,11 +117,17 @@ Cada archivo contiene:
 ### Paso 3: Lee los ejercicios semanales
 Abre `EJERCICIOS_SEMANALES.md` y revisa los 4 ejercicios obligatorios
 
-### Paso 4: Implementa los ejercicios
+### Paso 4: Lee el formato de entrega
+**🔴 CRÍTICO:** Abre `FORMATO_ENTREGA.md` y revisa:
+- Nomenclatura exacta del repositorio GitHub
+- Estructura de carpetas
+- Convenciones de nombres de archivos
+
+### Paso 5: Implementa los ejercicios
 Crea tus archivos `.java` y `ANALISIS.md` según tu dominio
 
-### Paso 5: Verifica antes de entregar
-Usa el checklist en `EJERCICIOS_SEMANALES.md`
+### Paso 6: Verifica antes de entregar
+Usa el checklist en `EJERCICIOS_SEMANALES.md` y `FORMATO_ENTREGA.md`
 
 ---
 
