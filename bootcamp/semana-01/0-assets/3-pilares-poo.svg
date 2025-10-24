@@ -4,7 +4,7 @@
       .title { font-family: Arial, sans-serif; font-size: 28px; font-weight: bold; fill: #2c3e50; }
       .pillar-title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: white; }
       .text { font-family: Arial, sans-serif; font-size: 13px; fill: #2c3e50; }
-      .small-text { font-family: Arial, sans-serif; font-size: 11px; fill: #7f8c8d; }
+      .small-text { font-family: Arial, sans-serif; font-size: 11px; fill: #34495e; }
       .foundation { fill: #34495e; }
       .pillar-1 { fill: #3498db; }
       .pillar-2 { fill: #27ae60; }
@@ -15,7 +15,7 @@
 
   <!-- Título principal -->
   <text x="450" y="45" text-anchor="middle" class="title">Los 4 Pilares de la POO</text>
-  <text x="450" y="70" text-anchor="middle" class="small-text">Fundamentos de la Programación Orientada a Objetos</text>
+  <text x="450" y="70" text-anchor="middle" class="text">Fundamentos de la Programación Orientada a Objetos</text>
 
   <!-- Estructura del templo -->
   <g id="templo">
@@ -134,6 +134,6 @@
   </g>
 
   <!-- Footer -->
-  <text x="10" y="640" class="small-text">Bootcamp POO Java - SENA</text>
-  <text x="890" y="640" text-anchor="end" class="small-text">Semana 01 - Fundamentos</text>
+  <text x="10" y="640" class="text" font-size="11px">Bootcamp POO Java - SENA</text>
+  <text x="890" y="640" text-anchor="end" class="text" font-size="11px">Semana 01 - Fundamentos</text>
 </svg>

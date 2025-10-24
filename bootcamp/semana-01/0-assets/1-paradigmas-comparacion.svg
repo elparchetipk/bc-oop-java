@@ -4,7 +4,7 @@
       .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
       .subtitle { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #34495e; }
       .text { font-family: Arial, sans-serif; font-size: 14px; fill: #2c3e50; }
-      .small-text { font-family: Arial, sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .small-text { font-family: Arial, sans-serif; font-size: 12px; fill: #34495e; }
       .box-estructurado { fill: #3498db; opacity: 0.1; }
       .box-poo { fill: #27ae60; opacity: 0.1; }
       .border-estructurado { fill: none; stroke: #3498db; stroke-width: 2; }
@@ -20,7 +20,7 @@
 
   <!-- Título -->
   <text x="450" y="40" text-anchor="middle" class="title">Comparación de Paradigmas</text>
-  <text x="450" y="65" text-anchor="middle" class="small-text">Programación Estructurada vs Orientada a Objetos</text>
+  <text x="450" y="65" text-anchor="middle" class="text">Programación Estructurada vs Orientada a Objetos</text>
 
   <!-- LADO IZQUIERDO: ESTRUCTURADO -->
   <g id="estructurado">
@@ -31,7 +31,7 @@
     <rect x="80" y="130" width="280" height="60" class="box-estructurado"/>
     <rect x="80" y="130" width="280" height="60" class="border-estructurado"/>
     <text x="220" y="155" text-anchor="middle" class="text">Variables Globales</text>
-    <text x="95" y="175" class="small-text">nombre, edad, nota1, nota2, nota3</text>
+    <text x="95" y="175" class="text" font-size="12px">nombre, edad, nota1, nota2, nota3</text>
     
     <!-- Funciones -->
     <rect x="100" y="220" width="240" height="50" rx="5" fill="#ecf0f1" stroke="#3498db" stroke-width="2"/>
@@ -126,5 +126,5 @@
   </g>
 
   <!-- Footer -->
-  <text x="450" y="570" text-anchor="middle" class="small-text">Bootcamp POO Java - SENA | Semana 01</text>
+  <text x="450" y="570" text-anchor="middle" class="text" font-size="12px">Bootcamp POO Java - SENA | Semana 01</text>
 </svg>
