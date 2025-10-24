@@ -106,56 +106,57 @@ Usa el checklist en `EJERCICIOS_SEMANALES.md`
 
 ---
 
-## 💡 Ejemplo de Implementación
+## 💡 Estructura de Entrega
 
-Si tu dominio es **Agencia de Viajes**, tus entregables serían:
-
-```
-mi-entrega/
-├── ANALISIS.md (análisis del dominio)
-├── Reserva.java (clase principal)
-├── Cliente.java (clase secundaria)
-└── PruebaAgenciaViajes.java (programa demo)
-```
-
-Si tu dominio es **Restaurante**, tus entregables serían:
+Tu entrega debe incluir **4 archivos** según tu dominio asignado:
 
 ```
-mi-entrega/
-├── ANALISIS.md
-├── Pedido.java (clase principal)
-├── Producto.java (clase secundaria)
-└── PruebaRestaurante.java (programa demo)
+mi-entrega-semana-01/
+├── ANALISIS.md              # Documento de análisis (Ejercicio 4)
+├── ClasePrincipal.java      # Objeto principal de tu dominio (Ejercicio 1)
+├── ClaseSecundaria.java     # Objeto relacionado (Ejercicio 2)
+└── PruebaMain.java          # Programa de demostración (Ejercicio 3)
 ```
+
+**📖 Ejemplo genérico de nomenclatura:**
+
+Para el dominio **"Sistema de Gestión de Cursos Online"** (usado en ejemplos didácticos):
+- `Curso.java` (clase principal)
+- `Estudiante.java` (clase secundaria)
+- `PruebaSistemaCursos.java` (programa main)
+
+**🔍 Para TU dominio específico:**
+- Consulta tu archivo individual en `fichas/[TU_FICHA]/[TU_NOMBRE].md`
+- Identifica los objetos principales de TU contexto
+- Revisa los ejemplos completos en `EJERCICIOS_SEMANALES.md`
 
 ---
 
-## 🔍 Ejemplos de Dominios Comunes
+## 🎓 Guía para Identificar Objetos en tu Dominio
 
-### 1. Agencia de Viajes
-- **Objetos:** Reserva, Cliente, Destino, Paquete Turístico
-- **Atributos de Reserva:** código, cliente, destino, fecha, precio, confirmada
-- **Métodos:** mostrarInformacion(), calcularPrecioConImpuesto(), confirmarReserva()
+Independientemente del dominio asignado, sigue esta metodología:
 
-### 2. Restaurante
-- **Objetos:** Pedido, Producto, Mesa, Cliente
-- **Atributos de Pedido:** numero, mesa, productos, total, estado
-- **Métodos:** agregarProducto(), calcularTotal(), cambiarEstado()
+### Paso 1: Identifica el Objeto Principal
+- ¿Qué "cosa" es central en el negocio?
+- Debe tener atributos relevantes (3-5 mínimo)
+- Debe tener comportamientos (métodos)
 
-### 3. Biblioteca
-- **Objetos:** Libro, Autor, Préstamo, Usuario
-- **Atributos de Libro:** isbn, titulo, autor, año, disponible
-- **Métodos:** prestar(), devolver(), mostrarInfo()
+### Paso 2: Identifica el Objeto Secundario Relacionado
+- ¿Qué otro objeto se relaciona con el principal?
+- ¿Cómo interactúan ambos objetos?
+- ¿Qué información comparten?
 
-### 4. Tienda Online
-- **Objetos:** Producto, Categoría, Carrito, Cliente
-- **Atributos de Producto:** código, nombre, precio, stock, categoría
-- **Métodos:** aplicarDescuento(), verificarStock(), mostrarDetalles()
+### Paso 3: Define Atributos
+- Tipos de datos primitivos en Java
+- Nombres descriptivos en camelCase
+- Modificadores de acceso apropiados
 
-### 5. Hospital
-- **Objetos:** Cita, Paciente, Doctor, Historia Clínica
-- **Atributos de Cita:** código, paciente, doctor, fecha, hora, motivo
-- **Métodos:** programar(), cancelar(), reagendar()
+### Paso 4: Define Métodos
+- Comportamientos del objeto
+- Operaciones de cálculo o validación
+- Métodos para mostrar información
+
+**📌 Consulta ejemplos completos en:** `EJERCICIOS_SEMANALES.md`
 
 ---
 

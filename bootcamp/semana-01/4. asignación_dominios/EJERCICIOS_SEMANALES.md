@@ -175,85 +175,85 @@ Crea un programa principal que **demuestre el uso** de las dos clases anteriores
 - Debe llamar a **todos los métodos** implementados
 - Debe mostrar resultados en consola de forma clara
 
-**Ejemplo:**
+**Ejemplo didáctico (dominio genérico):**
 
 ```java
-public class PruebaAgenciaViajes {
+public class PruebaSistemaCursos {
     public static void main(String[] args) {
-        System.out.println("=== SISTEMA DE AGENCIA DE VIAJES ===\n");
+        System.out.println("=== SISTEMA DE GESTIÓN DE CURSOS ===\n");
         
-        // Crear clientes
-        Cliente cliente1 = new Cliente("1001", "María López", "maria@email.com");
-        Cliente cliente2 = new Cliente("1002", "Juan Pérez", "juan@email.com");
+        // Crear estudiantes
+        Estudiante est1 = new Estudiante("E001", "Pedro Ramírez", "pedro@email.com");
+        Estudiante est2 = new Estudiante("E002", "Ana Silva", "ana@email.com");
         
-        // Crear reservas
-        Reserva reserva1 = new Reserva("R001", "María López", "Cartagena", 1500000);
-        Reserva reserva2 = new Reserva("R002", "Juan Pérez", "San Andrés", 2000000);
+        // Crear cursos
+        Curso curso1 = new Curso("POO101", "Prog. Orientada a Objetos", "Dr. García", 40);
+        Curso curso2 = new Curso("WEB201", "Desarrollo Web", "Ing. López", 60);
         
         // Demostrar funcionalidad
-        System.out.println("--- CLIENTES ---");
-        cliente1.mostrarDatos();
+        System.out.println("--- ESTUDIANTES ---");
+        est1.mostrarDatos();
         System.out.println();
-        cliente2.mostrarDatos();
+        est2.mostrarDatos();
         
-        System.out.println("\n--- RESERVAS ---");
-        reserva1.mostrarInformacion();
-        System.out.println("\nPrecio con impuesto: $" + reserva1.calcularPrecioConImpuesto());
+        System.out.println("\n--- CURSOS ---");
+        curso1.mostrarInformacion();
+        System.out.println("\nCosto total: $" + curso1.calcularCostoTotal());
         
         System.out.println();
-        reserva2.mostrarInformacion();
-        reserva2.setConfirmada(true);
-        System.out.println("\n--- Después de confirmar ---");
-        reserva2.mostrarInformacion();
+        curso2.mostrarInformacion();
+        curso2.setActivo(false);
+        System.out.println("\n--- Después de desactivar ---");
+        curso2.mostrarInformacion();
         
-        // Incrementar reservas del cliente
-        cliente1.incrementarReservas();
-        System.out.println("\n¿Cliente frecuente?: " + cliente1.esClienteFrecuente());
+        // Inscribir estudiante a curso
+        est1.inscribirCurso();
+        System.out.println("\n¿Estudiante activo?: " + est1.esEstudianteActivo());
     }
 }
 ```
 
 **Salida esperada:**
 ```
-=== SISTEMA DE AGENCIA DE VIAJES ===
+=== SISTEMA DE GESTIÓN DE CURSOS ===
 
---- CLIENTES ---
-Cliente: María López
-Cédula: 1001
-Email: maria@email.com
-Reservas: 0
+--- ESTUDIANTES ---
+Estudiante: Pedro Ramírez
+Código: E001
+Email: pedro@email.com
+Cursos: 0
 
-Cliente: Juan Pérez
-Cédula: 1002
-Email: juan@email.com
-Reservas: 0
+Estudiante: Ana Silva
+Código: E002
+Email: ana@email.com
+Cursos: 0
 
---- RESERVAS ---
-=== RESERVA ===
-Código: R001
-Cliente: María López
-Destino: Cartagena
-Precio: $1500000.0
-Estado: PENDIENTE
+--- CURSOS ---
+=== CURSO ===
+Código: POO101
+Nombre: Prog. Orientada a Objetos
+Instructor: Dr. García
+Duración: 40 horas
+Estado: ACTIVO
 
-Precio con impuesto: $1785000.0
+Costo total: $600000.0
 
-=== RESERVA ===
-Código: R002
-Cliente: Juan Pérez
-Destino: San Andrés
-Precio: $2000000.0
-Estado: PENDIENTE
+=== CURSO ===
+Código: WEB201
+Nombre: Desarrollo Web
+Instructor: Ing. López
+Duración: 60 horas
+Estado: ACTIVO
 
---- Después de confirmar ---
-=== RESERVA ===
-Código: R002
-Cliente: Juan Pérez
-Destino: San Andrés
-Precio: $2000000.0
-Estado: CONFIRMADA
+--- Después de desactivar ---
+=== CURSO ===
+Código: WEB201
+Nombre: Desarrollo Web
+Instructor: Ing. López
+Duración: 60 horas
+Estado: INACTIVO
 
-¿Cliente frecuente?: false
+¿Estudiante activo?: true
 ```
 
 **Criterios de evaluación automática:**
