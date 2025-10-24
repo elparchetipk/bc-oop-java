@@ -375,114 +375,114 @@ class Profesor extends Empleado {
 
 ## 💻 Ejemplo Práctico: Mismo Problema, Dos Enfoques
 
-### Problema: Sistema de Biblioteca
+### Problema: Sistema de Gestión de Tareas
 
-**Requerimiento:** Gestionar libros con título, autor, ISBN, disponibilidad
+**Requerimiento:** Gestionar tareas con título, descripción, prioridad y estado de completado
 
 ### Solución Estructurada
 
 ```java
-public class BibliotecaEstructurada {
-    // Variables globales para UN libro
+public class GestionTareasEstructurada {
+    // Variables globales para UNA tarea
     static String titulo;
-    static String autor;
-    static String isbn;
-    static boolean disponible;
+    static String descripcion;
+    static String prioridad;
+    static boolean completada;
     
     // Funciones que operan sobre variables globales
-    static void inicializarLibro(String t, String a, String i) {
+    static void inicializarTarea(String t, String d, String p) {
         titulo = t;
-        autor = a;
-        isbn = i;
-        disponible = true;
+        descripcion = d;
+        prioridad = p;
+        completada = false;
     }
     
-    static void prestar() {
-        if (disponible) {
-            disponible = false;
-            System.out.println("Libro prestado: " + titulo);
+    static void completar() {
+        if (!completada) {
+            completada = true;
+            System.out.println("Tarea completada: " + titulo);
         } else {
-            System.out.println("Libro no disponible");
+            System.out.println("Tarea ya completada");
         }
     }
     
-    static void devolver() {
-        disponible = true;
-        System.out.println("Libro devuelto: " + titulo);
+    static void reabrir() {
+        completada = false;
+        System.out.println("Tarea reabierta: " + titulo);
     }
     
     static void mostrarInfo() {
         System.out.println("Título: " + titulo);
-        System.out.println("Autor: " + autor);
-        System.out.println("ISBN: " + isbn);
-        System.out.println("Disponible: " + (disponible ? "Sí" : "No"));
+        System.out.println("Descripción: " + descripcion);
+        System.out.println("Prioridad: " + prioridad);
+        System.out.println("Completada: " + (completada ? "Sí" : "No"));
     }
     
     public static void main(String[] args) {
-        // Problema: ¿Cómo manejar múltiples libros?
-        inicializarLibro("Don Quijote", "Cervantes", "123-456");
+        // Problema: ¿Cómo manejar múltiples tareas?
+        inicializarTarea("Estudiar POO", "Repasar conceptos", "ALTA");
         mostrarInfo();
-        prestar();
+        completar();
         
-        // Para otro libro necesitarías más variables globales
+        // Para otra tarea necesitarías más variables globales
         // o arrays complicados
     }
 }
 ```
 
 **Problemas:**
-- ❌ Solo puedes manejar UN libro fácilmente
-- ❌ Múltiples libros requieren arrays paralelos complicados
+- ❌ Solo puedes manejar UNA tarea fácilmente
+- ❌ Múltiples tareas requieren arrays paralelos complicados
 - ❌ Código difícil de mantener
 
 ### Solución POO
 
 ```java
 /**
- * Clase Libro - Modelo del mundo real
+ * Clase Tarea - Modelo del mundo real
  */
-public class Libro {
-    // Atributos (características del libro)
+public class Tarea {
+    // Atributos (características de la tarea)
     private String titulo;
-    private String autor;
-    private String isbn;
-    private boolean disponible;
+    private String descripcion;
+    private String prioridad;
+    private boolean completada;
     
     // Constructor
-    public Libro(String titulo, String autor, String isbn) {
+    public Tarea(String titulo, String descripcion, String prioridad) {
         this.titulo = titulo;
-        this.autor = autor;
-        this.isbn = isbn;
-        this.disponible = true;  // Por defecto disponible
+        this.descripcion = descripcion;
+        this.prioridad = prioridad;
+        this.completada = false;  // Por defecto no completada
     }
     
-    // Métodos (comportamientos del libro)
-    public void prestar() {
-        if (disponible) {
-            disponible = false;
-            System.out.println("Libro prestado: " + titulo);
+    // Métodos (comportamientos de la tarea)
+    public void completar() {
+        if (!completada) {
+            completada = true;
+            System.out.println("Tarea completada: " + titulo);
         } else {
-            System.out.println("Libro no disponible: " + titulo);
+            System.out.println("Tarea ya completada: " + titulo);
         }
     }
     
-    public void devolver() {
-        disponible = true;
-        System.out.println("Libro devuelto: " + titulo);
+    public void reabrir() {
+        completada = false;
+        System.out.println("Tarea reabierta: " + titulo);
     }
     
     public void mostrarInfo() {
         System.out.println("═══════════════════════");
         System.out.println("Título: " + titulo);
-        System.out.println("Autor: " + autor);
-        System.out.println("ISBN: " + isbn);
-        System.out.println("Disponible: " + (disponible ? "Sí" : "No"));
+        System.out.println("Descripción: " + descripcion);
+        System.out.println("Prioridad: " + prioridad);
+        System.out.println("Completada: " + (completada ? "Sí" : "No"));
         System.out.println("═══════════════════════");
     }
     
     // Getters
-    public boolean estaDisponible() {
-        return disponible;
+    public boolean estaCompletada() {
+        return completada;
     }
     
     public String getTitulo() {
@@ -491,33 +491,33 @@ public class Libro {
 }
 
 /**
- * Sistema de biblioteca
+ * Sistema de gestión de tareas
  */
-public class Biblioteca {
+public class GestionTareas {
     public static void main(String[] args) {
-        // Crear múltiples libros fácilmente
-        Libro libro1 = new Libro("Don Quijote", "Cervantes", "123-456");
-        Libro libro2 = new Libro("Cien Años de Soledad", "García Márquez", "789-012");
-        Libro libro3 = new Libro("El Principito", "Saint-Exupéry", "345-678");
+        // Crear múltiples tareas fácilmente
+        Tarea tarea1 = new Tarea("Estudiar POO", "Repasar conceptos fundamentales", "ALTA");
+        Tarea tarea2 = new Tarea("Proyecto Java", "Implementar clases del dominio", "MEDIA");
+        Tarea tarea3 = new Tarea("Ejercicios", "Resolver prácticas semanales", "BAJA");
         
-        // Usar cada libro independientemente
-        libro1.mostrarInfo();
-        libro1.prestar();
-        libro1.prestar();  // Intenta prestar dos veces
-        libro1.devolver();
+        // Usar cada tarea independientemente
+        tarea1.mostrarInfo();
+        tarea1.completar();
+        tarea1.completar();  // Intenta completar dos veces
+        tarea1.reabrir();
         
-        libro2.mostrarInfo();
-        libro2.prestar();
+        tarea2.mostrarInfo();
+        tarea2.completar();
         
-        libro3.mostrarInfo();
+        tarea3.mostrarInfo();
         
-        // Colección de libros
-        Libro[] libros = {libro1, libro2, libro3};
+        // Colección de tareas
+        Tarea[] tareas = {tarea1, tarea2, tarea3};
         
-        System.out.println("\n=== LIBROS DISPONIBLES ===");
-        for (Libro libro : libros) {
-            if (libro.estaDisponible()) {
-                System.out.println("- " + libro.getTitulo());
+        System.out.println("\n=== TAREAS PENDIENTES ===");
+        for (Tarea tarea : tareas) {
+            if (!tarea.estaCompletada()) {
+                System.out.println("- " + tarea.getTitulo());
             }
         }
     }
@@ -527,38 +527,38 @@ public class Biblioteca {
 **Salida:**
 ```
 ═══════════════════════
-Título: Don Quijote
-Autor: Cervantes
-ISBN: 123-456
-Disponible: Sí
+Título: Estudiar POO
+Descripción: Repasar conceptos fundamentales
+Prioridad: ALTA
+Completada: No
 ═══════════════════════
-Libro prestado: Don Quijote
-Libro no disponible: Don Quijote
-Libro devuelto: Don Quijote
+Tarea completada: Estudiar POO
+Tarea ya completada: Estudiar POO
+Tarea reabierta: Estudiar POO
 ═══════════════════════
-Título: Cien Años de Soledad
-Autor: García Márquez
-ISBN: 789-012
-Disponible: Sí
+Título: Proyecto Java
+Descripción: Implementar clases del dominio
+Prioridad: MEDIA
+Completada: No
 ═══════════════════════
-Libro prestado: Cien Años de Soledad
+Tarea completada: Proyecto Java
 ═══════════════════════
-Título: El Principito
-Autor: Saint-Exupéry
-ISBN: 345-678
-Disponible: Sí
+Título: Ejercicios
+Descripción: Resolver prácticas semanales
+Prioridad: BAJA
+Completada: No
 ═══════════════════════
 
-=== LIBROS DISPONIBLES ===
-- Don Quijote
-- El Principito
+=== TAREAS PENDIENTES ===
+- Estudiar POO
+- Ejercicios
 ```
 
 **Ventajas:**
-- ✅ Múltiples libros fácilmente manejables
-- ✅ Cada libro es independiente
+- ✅ Múltiples tareas fácilmente manejables
+- ✅ Cada tarea es independiente
 - ✅ Código limpio y organizado
-- ✅ Fácil de extender (agregar más libros)
+- ✅ Fácil de extender (agregar más tareas)
 
 ---
 

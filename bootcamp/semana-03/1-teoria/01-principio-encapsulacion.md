@@ -108,7 +108,7 @@ public class Persona {
 
 ```java
 // Developer A trabaja en la clase
-public class Producto {
+public class Articulo {
     private double precio;
     
     public double getPrecio() {
@@ -121,9 +121,9 @@ public class Producto {
 }
 
 // Developer B usa la clase sin conocer detalles internos
-Producto p = new Producto();
-p.setPrecio(100.0);
-System.out.println(p.getPrecio());
+Articulo articulo = new Articulo();
+articulo.setPrecio(100.0);
+System.out.println(articulo.getPrecio());
 ```
 
 **Beneficio**: Separación clara de responsabilidades.

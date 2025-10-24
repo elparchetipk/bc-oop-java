@@ -230,21 +230,21 @@ class Autenticacion {
     }
 }
 
-// Módulo: Productos
-class Producto {
+// Módulo: Documentos
+class Documento {
     public void guardar() {
         // ...
     }
 }
 
-// Módulo: Ventas
-class Venta {
-    private Autenticacion auth;  // Usa módulo Autenticación
-    private Producto producto;   // Usa módulo Producto
+// Módulo: Procesamiento
+class ProcesadorDocumento {
+    private Autenticacion auth;      // Usa módulo Autenticación
+    private Documento documento;     // Usa módulo Documento
     
-    public void procesarVenta() {
+    public void procesarDocumento() {
         if (auth.validarUsuario(...)) {
-            producto.guardar();
+            documento.guardar();
         }
     }
 }
