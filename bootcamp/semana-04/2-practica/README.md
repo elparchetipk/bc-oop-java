@@ -213,25 +213,34 @@ cd ejercicio-01-comparacion-herencia/solucion/
 ### Para Evaluación
 
 1. **Compila** y **prueba** tu código
-2. **Organiza** archivos según estructura
+2. **Organiza** archivos según estructura de proyecto
 3. **Documenta** con comentarios
-4. **Comprime** en un .zip o sube a Git
-5. **Entrega** según indicaciones del instructor
+4. **Sube a GitHub** en repositorio estructurado
+5. **Verifica** que el proyecto sea funcional y compilable
 
-### Formato de Nombres
+### Formato en GitHub
+
+**Estructura requerida:**
 
 ```
-apellido-nombre-ejercicio-01.zip
-apellido-nombre-ejercicio-02.zip
-...
+repositorio-apellido-nombre/
+├── semana-04/
+│   ├── ejercicio-01/
+│   │   ├── src/
+│   │   ├── README.md
+│   │   └── ...
+│   ├── ejercicio-02/
+│   │   ├── src/
+│   │   ├── README.md
+│   │   └── ...
+│   └── ...
 ```
 
-O en Git:
-```
-repositorio/semana-04/ejercicio-01/
-repositorio/semana-04/ejercicio-02/
-...
-```
+**⚠️ Importante:**
+- ❌ **NO se aceptan** archivos .zip o .rar
+- ❌ **NO se aceptan** archivos sueltos sin estructura
+- ✅ **SOLO** repositorios GitHub con proyectos estructurados
+- ✅ Código debe compilar y ejecutarse correctamente
 
 ---
 

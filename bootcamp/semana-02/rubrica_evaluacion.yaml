@@ -165,8 +165,18 @@ formato_entrega:
     - "│   ├── Clase2.java"
     - "│   └── Main.java"
     - "└── documentacion/ (opcional)"
-  metodo: "Repositorio Git o archivo .zip"
+  metodo: "Repositorio GitHub (proyecto estructurado y funcional)"
   nomenclatura: "apellido-nombre-semana02"
+  requisitos:
+    no_permitido:
+      - "Archivos .zip"
+      - "Archivos .rar"
+      - "Archivos sueltos sin estructura"
+    obligatorio:
+      - "Repositorio GitHub"
+      - "Proyecto estructurado"
+      - "Código compilable"
+      - "README.md con instrucciones"
 
 niveles_logro:
   excelente:

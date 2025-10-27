@@ -148,8 +148,12 @@
       "│   └── Main.java",
       "└── documentacion/ (opcional)"
     ],
-    "metodo": "Repositorio Git o archivo .zip",
-    "nomenclatura": "apellido-nombre-semana02"
+    "metodo": "Repositorio GitHub (proyecto estructurado y funcional)",
+    "nomenclatura": "apellido-nombre-semana02",
+    "requisitos": {
+      "no_permitido": ["Archivos .zip", "Archivos .rar", "Archivos sueltos sin estructura"],
+      "obligatorio": ["Repositorio GitHub", "Proyecto estructurado", "Código compilable", "README.md con instrucciones"]
+    }
   },
   "niveles_logro": {
     "excelente": {"rango": [4.6, 5.0], "descripcion": "Dominio completo de conceptos y aplicación impecable"},
