@@ -162,8 +162,13 @@ semana-02-entrega/
 
 ### Información de Entrega
 - **Fecha límite:** [Definir según calendario]
-- **Método:** Repositorio Git (GitHub/GitLab) o archivo .zip
-- **Nombre del archivo/repo:** `apellido-nombre-semana02`
+- **Método:** Repositorio GitHub (proyecto estructurado y funcional)
+- **Nombre del repositorio:** `apellido-nombre-semana02`
+- **Requisitos:**
+  - ❌ No se aceptan archivos sueltos (.zip, .rar)
+  - ✅ Solo repositorios con estructura de proyecto completa
+  - ✅ Código compilable y ejecutable
+  - ✅ README.md con instrucciones claras
 
 ---
 
